@@ -153,6 +153,31 @@ body {
                 width: 100%;
             }
         }
+        
+.tarjeta {
+    cursor: pointer;
+}
+
+.informacion {
+    background: white;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px #1e40af20;
+}
+
+.informacion h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.informacion p {
+    color: #475569;
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
     </style>
 </head>
 
@@ -196,25 +221,31 @@ body {
 
             <div class="tarjetas">
 
-                <div class="tarjeta">
+                <div class="tarjeta" onclick="mostrarIntegrante('angela')">
                     <div class="icono">👩‍💻</div>
                     <h3>Angela</h3>
                     <p>Integrante del grupo</p>
                 </div>
 
-                <div class="tarjeta">
+               <div class="tarjeta" onclick="mostrarIntegrante('naomy')">
                     <div class="icono">👩‍💻</div>
                     <h3>Naomy</h3>
                     <p>Integrante del grupo</p>
                 </div>
 
-                <div class="tarjeta">
+              <div class="tarjeta" onclick="mostrarIntegrante('alejandra')">
                     <div class="icono">👩‍💻</div>
-                    <h3>Compañera 2</h3>
+                    <h3>Alejandra</h3>
                     <p>Integrante del grupo</p>
                 </div>
 
+
+
             </div>
+            <div id="informacion-integrante" class="informacion">
+    <h3>¡Conoce a nuestro equipo! 💙</h3>
+    <p>Toca una tarjeta para conocer a cada integrante.</p>
+</div>
         </section>
 
     </main>
@@ -225,10 +256,43 @@ body {
     </footer>
 
 <script>
+    
+<script>
     function mostrarMensaje() {
         document.getElementById("mensaje").innerHTML =
-            "¡Bienvenidos a nuestra página! 💜✨ Gracias por visitarnos.";
+            "¡Bienvenidos a nuestra página! 💙✨ Gracias por visitarnos.";
     }
+
+    function mostrarIntegrante(integrante) {
+        let informacion = "";
+
+        if (integrante === "angela") {
+            informacion = `
+                <h3>👩‍💻 Angela</h3>
+                <p><strong>Integrante del grupo</strong></p>
+                <p>Aquí puedes escribir información sobre Angela.</p>
+            `;
+        } 
+        else if (integrante === "naomy") {
+            informacion = `
+                <h3>👩‍💻 Naomy</h3>
+                <p><strong>Integrante del grupo</strong></p>
+                <p>Aquí puedes escribir información sobre Naomy.</p>
+            `;
+        } 
+        else if (integrante === "companera") {
+            informacion = `
+                <h3>👩‍💻 Compañera 2</h3>
+                <p><strong>Integrante del grupo</strong></p>
+                <p>Aquí puedes escribir información sobre ella.</p>
+            `;
+        }
+
+        document.getElementById("informacion-integrante").innerHTML =
+            informacion;
+    }
+</script>
+
 </script>
 
 </body>
