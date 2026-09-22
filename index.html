@@ -1,53 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi primera página</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi primera página | Introducción a la Informática</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+            color: #252344;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px #00000015;
+        }
+
+        header h1 {
+            color: #7251b5;
+            font-size: 28px;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #666080;
+        }
+
+        .contenedor {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .principal {
+            background: white;
+            text-align: center;
+            padding: 45px 25px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px #51447725;
+        }
+
+        .principal .emoji {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .principal h2 {
+            color: #7251b5;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .principal p {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #625d78;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 25px;
+            background: #805ad5;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background: #5a3ca3;
+            transform: translateY(-4px);
+        }
+
+        .integrantes {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .integrantes h2 {
+            color: #514080;
+            margin-bottom: 20px;
+            font-size: 27px;
+        }
+
+        .tarjetas {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .tarjeta {
+            background: white;
+            width: 220px;
+            padding: 25px 15px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px #51447720;
+            transition: 0.3s;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px #51447735;
+        }
+
+        .tarjeta .icono {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        .tarjeta h3 {
+            color: #7251b5;
+            margin-bottom: 8px;
+        }
+
+        .tarjeta p {
+            color: #77708c;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 22px;
+            text-align: center;
+            background: #7251b5;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .principal h2 {
+                font-size: 25px;
+            }
+
+            .tarjeta {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>¡Hola, GitHub!</h1>
+    <header>
+        <h1>💜 Mi primera página web</h1>
+        <p>Aprendiendo, creando y compartiendo con GitHub</p>
+    </header>
 
-    <h2>Introducción a la Informática</h2>
+    <main class="contenedor">
 
-    <p>Somos estudiantes y estamos aprendiendo a utilizar GitHub.</p>
+        <section class="principal">
+            <div class="emoji">💻✨</div>
 
-    <h3>Integrantes del grupo</h3>
+            <h2>¡Hola, GitHub!</h2>
 
-    <ul>
-        <li>Angela</li>
-        <li>Naomy</li>
-        <li>Compañera 2</li>
-    </ul>
+            <p>
+                Somos estudiantes de Introducción a la Informática
+                y estamos aprendiendo a utilizar GitHub para crear,
+                guardar y compartir nuestros proyectos.
+            </p>
 
-</body>hos
+            <a class="boton"
+               href="https://github.com/angelaorga2010-eng/mi-primera-pagina">
+                Ver nuestro repositorio
+            </a>
+        </section>
+
+        <section class="integrantes">
+            <h2>🌸 Integrantes del grupo 🌸</h2>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <div class="icono">👩‍💻</div>
+                    <h3>Angela</h3>
+                    <p>Integrante del grupo</p>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="icono">👩‍💻</div>
+                    <h3>Naomy</h3>
+                    <p>Integrante del grupo</p>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="icono">👩‍💻</div>
+                    <h3>Compañera 2</h3>
+                    <p>Integrante del grupo</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>💜 Proyecto de Introducción a la Informática</p>
+        <p>Creado por nuestro grupo con HTML y CSS</p>
+    </footer>
+
+</body>
 </html>
-
-Hola me reporto, espero podamos pasar esta tarea 
-
-<exito a todas >
-<li>Susan</li>
-    
-    <h1>¡Hola! Mi nombre es Naomy</h1>
-    <p>Soy estudiante de la clase de Introducción a la Informática y formo parte del Grupo N 1 X. Este es mi espacio dentro de nuestro proyecto universitario en GitHub.</p
-   <ul>
-       
-        <li><strong>Carrera:</strong> [Lic. Relaciones Industriales</li>
-        <li><strong>Número de cuenta:</strong> [202620150013]</li>
-        <li><strong>Correo:</strong> [nrportillo@uth.hn]</li>   
-   </ul> 
-    <h3>Sobre mí y mis expectativas</h3>
-    <p>Me interesa aprender sobre desarrollo web, gestión de repositorios con Git y trabajo colaborativo en equipo.
-        y lo mas importante el trabajo en equipo.</p>
-        
-       <li>Angela</li>
-    
-    <h1>¡Hola! Mi nombre es Angela</h1>
-    <p>Soy estudiante de la clase de Introducción a la Informática y formo parte del Grupo N 1. Este es mi espacio dentro de nuestro proyecto universitario en GitHub.</p
-   <ul>
-       
-        <li><strong>Carrera:</strong> [Licenciatura Relaciones Industriales</li>
-        <li><strong>Número de cuenta:</strong> [202510150197]</li>
-        <li><strong>Correo:</strong> [angelaorga2010@gmail.com]</li>   
-   </ul> 
-    <h3>Sobre mí y mis expectativas</h3>
-    <p>Me interesa aprender mas sobre GitHub y sobre como trabajar mejor en equipo.</p>
