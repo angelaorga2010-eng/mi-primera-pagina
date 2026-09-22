@@ -175,6 +175,15 @@
                href="https://github.com/angelaorga2010-eng/mi-primera-pagina">
                 Ver nuestro repositorio
             </a>
+            
+<br>
+
+<button class="boton" onclick="mostrarMensaje()">
+    ¡Haz clic aquí! 💜
+</button>
+
+<p id="mensaje"></p>
+
         </section>
 
         <section class="integrantes">
@@ -209,6 +218,13 @@
         <p>💜 Proyecto de Introducción a la Informática</p>
         <p>Creado por nuestro grupo con HTML y CSS</p>
     </footer>
+
+<script>
+    function mostrarMensaje() {
+        document.getElementById("mensaje").innerHTML =
+            "¡Bienvenidos a nuestra página! 💜✨ Gracias por visitarnos.";
+    }
+</script>
 
 </body>
 </html>
